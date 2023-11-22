@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83BAB87D2B0DE7E0006793FA /* DataSharingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB87C2B0DE7E0006793FA /* DataSharingAppApp.swift */; };
+		83BAB87F2B0DE7E0006793FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB87E2B0DE7E0006793FA /* ContentView.swift */; };
+		83BAB8812B0DE7E1006793FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BAB8802B0DE7E1006793FA /* Assets.xcassets */; };
+		83BAB8842B0DE7E1006793FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BAB8832B0DE7E1006793FA /* Preview Assets.xcassets */; };
+		83BAB8A72B0DE7F7006793FA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8A62B0DE7F7006793FA /* DataModel.swift */; };
+		83BAB8A92B0DEA11006793FA /* ObjectSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8A82B0DEA11006793FA /* ObjectSavable.swift */; };
+		83BAB8B12B0DEA36006793FA /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8B02B0DEA36006793FA /* KeyboardViewController.swift */; };
+		83BAB8B52B0DEA36006793FA /* DataSharingKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 83BAB8AE2B0DEA36006793FA /* DataSharingKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83BAB8BF2B0DEAD9006793FA /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83BAB8BE2B0DEAD9006793FA /* KeyboardKit */; };
+		83BAB8C12B0DEB16006793FA /* CustomStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8C02B0DEB16006793FA /* CustomStyleProvider.swift */; };
+		83BAB8C22B0DED4A006793FA /* ObjectSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8A82B0DEA11006793FA /* ObjectSavable.swift */; };
+		83BAB8C32B0DED63006793FA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BAB8A62B0DE7F7006793FA /* DataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83BAB8B32B0DEA36006793FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83BAB8712B0DE7E0006793FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83BAB8AD2B0DEA36006793FA;
+			remoteInfo = DataSharingKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83BAB8B92B0DEA36006793FA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83BAB8B52B0DEA36006793FA /* DataSharingKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		83BAB8792B0DE7E0006793FA /* DataSharingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSharingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BAB87C2B0DE7E0006793FA /* DataSharingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSharingAppApp.swift; sourceTree = "<group>"; };
+		83BAB87E2B0DE7E0006793FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83BAB8802B0DE7E1006793FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83BAB8832B0DE7E1006793FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83BAB8A62B0DE7F7006793FA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		83BAB8A82B0DEA11006793FA /* ObjectSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSavable.swift; sourceTree = "<group>"; };
+		83BAB8AE2B0DEA36006793FA /* DataSharingKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DataSharingKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BAB8B02B0DEA36006793FA /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		83BAB8B22B0DEA36006793FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BAB8BA2B0DEA75006793FA /* DataSharingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataSharingApp.entitlements; sourceTree = "<group>"; };
+		83BAB8BB2B0DEA8E006793FA /* DataSharingKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataSharingKeyboard.entitlements; sourceTree = "<group>"; };
+		83BAB8C02B0DEB16006793FA /* CustomStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyleProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83BAB8762B0DE7E0006793FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BAB8AB2B0DEA36006793FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BAB8BF2B0DEAD9006793FA /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83BAB8702B0DE7E0006793FA = {
+			isa = PBXGroup;
+			children = (
+				83BAB87B2B0DE7E0006793FA /* DataSharingApp */,
+				83BAB8AF2B0DEA36006793FA /* DataSharingKeyboard */,
+				83BAB87A2B0DE7E0006793FA /* Products */,
+				83BAB8BD2B0DEAD9006793FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83BAB87A2B0DE7E0006793FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83BAB8792B0DE7E0006793FA /* DataSharingApp.app */,
+				83BAB8AE2B0DEA36006793FA /* DataSharingKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83BAB87B2B0DE7E0006793FA /* DataSharingApp */ = {
+			isa = PBXGroup;
+			children = (
+				83BAB8BA2B0DEA75006793FA /* DataSharingApp.entitlements */,
+				83BAB87C2B0DE7E0006793FA /* DataSharingAppApp.swift */,
+				83BAB87E2B0DE7E0006793FA /* ContentView.swift */,
+				83BAB8A62B0DE7F7006793FA /* DataModel.swift */,
+				83BAB8A82B0DEA11006793FA /* ObjectSavable.swift */,
+				83BAB8802B0DE7E1006793FA /* Assets.xcassets */,
+				83BAB8822B0DE7E1006793FA /* Preview Content */,
+			);
+			path = DataSharingApp;
+			sourceTree = "<group>";
+		};
+		83BAB8822B0DE7E1006793FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83BAB8832B0DE7E1006793FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83BAB8AF2B0DEA36006793FA /* DataSharingKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				83BAB8BB2B0DEA8E006793FA /* DataSharingKeyboard.entitlements */,
+				83BAB8B02B0DEA36006793FA /* KeyboardViewController.swift */,
+				83BAB8C02B0DEB16006793FA /* CustomStyleProvider.swift */,
+				83BAB8B22B0DEA36006793FA /* Info.plist */,
+			);
+			path = DataSharingKeyboard;
+			sourceTree = "<group>";
+		};
+		83BAB8BD2B0DEAD9006793FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83BAB8782B0DE7E0006793FA /* DataSharingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BAB89D2B0DE7E1006793FA /* Build configuration list for PBXNativeTarget "DataSharingApp" */;
+			buildPhases = (
+				83BAB8752B0DE7E0006793FA /* Sources */,
+				83BAB8762B0DE7E0006793FA /* Frameworks */,
+				83BAB8772B0DE7E0006793FA /* Resources */,
+				83BAB8B92B0DEA36006793FA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83BAB8B42B0DEA36006793FA /* PBXTargetDependency */,
+			);
+			name = DataSharingApp;
+			productName = DataSharingApp;
+			productReference = 83BAB8792B0DE7E0006793FA /* DataSharingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83BAB8AD2B0DEA36006793FA /* DataSharingKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BAB8B62B0DEA36006793FA /* Build configuration list for PBXNativeTarget "DataSharingKeyboard" */;
+			buildPhases = (
+				83BAB8AA2B0DEA36006793FA /* Sources */,
+				83BAB8AB2B0DEA36006793FA /* Frameworks */,
+				83BAB8AC2B0DEA36006793FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataSharingKeyboard;
+			packageProductDependencies = (
+				83BAB8BE2B0DEAD9006793FA /* KeyboardKit */,
+			);
+			productName = DataSharingKeyboard;
+			productReference = 83BAB8AE2B0DEA36006793FA /* DataSharingKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83BAB8712B0DE7E0006793FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					83BAB8782B0DE7E0006793FA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					83BAB8AD2B0DEA36006793FA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 83BAB8742B0DE7E0006793FA /* Build configuration list for PBXProject "DataSharingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83BAB8702B0DE7E0006793FA;
+			packageReferences = (
+				83BAB8BC2B0DEACE006793FA /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
+			productRefGroup = 83BAB87A2B0DE7E0006793FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83BAB8782B0DE7E0006793FA /* DataSharingApp */,
+				83BAB8AD2B0DEA36006793FA /* DataSharingKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83BAB8772B0DE7E0006793FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BAB8842B0DE7E1006793FA /* Preview Assets.xcassets in Resources */,
+				83BAB8812B0DE7E1006793FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BAB8AC2B0DEA36006793FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83BAB8752B0DE7E0006793FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BAB87F2B0DE7E0006793FA /* ContentView.swift in Sources */,
+				83BAB8A92B0DEA11006793FA /* ObjectSavable.swift in Sources */,
+				83BAB87D2B0DE7E0006793FA /* DataSharingAppApp.swift in Sources */,
+				83BAB8A72B0DE7F7006793FA /* DataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BAB8AA2B0DEA36006793FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BAB8C22B0DED4A006793FA /* ObjectSavable.swift in Sources */,
+				83BAB8C32B0DED63006793FA /* DataModel.swift in Sources */,
+				83BAB8B12B0DEA36006793FA /* KeyboardViewController.swift in Sources */,
+				83BAB8C12B0DEB16006793FA /* CustomStyleProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83BAB8B42B0DEA36006793FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83BAB8AD2B0DEA36006793FA /* DataSharingKeyboard */;
+			targetProxy = 83BAB8B32B0DEA36006793FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83BAB89B2B0DE7E1006793FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83BAB89C2B0DE7E1006793FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83BAB89E2B0DE7E1006793FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DataSharingApp/DataSharingApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DataSharingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B9NP6VQ7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sixblack.TestLocalPackage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83BAB89F2B0DE7E1006793FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DataSharingApp/DataSharingApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DataSharingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6B9NP6VQ7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sixblack.TestLocalPackage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83BAB8B72B0DEA36006793FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DataSharingKeyboard/DataSharingKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B9NP6VQ7R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DataSharingKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DataSharingKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sixblack.TestLocalPackage.DataSharingKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83BAB8B82B0DEA36006793FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DataSharingKeyboard/DataSharingKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6B9NP6VQ7R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DataSharingKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DataSharingKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sixblack.TestLocalPackage.DataSharingKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83BAB8742B0DE7E0006793FA /* Build configuration list for PBXProject "DataSharingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BAB89B2B0DE7E1006793FA /* Debug */,
+				83BAB89C2B0DE7E1006793FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BAB89D2B0DE7E1006793FA /* Build configuration list for PBXNativeTarget "DataSharingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BAB89E2B0DE7E1006793FA /* Debug */,
+				83BAB89F2B0DE7E1006793FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BAB8B62B0DEA36006793FA /* Build configuration list for PBXNativeTarget "DataSharingKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BAB8B72B0DEA36006793FA /* Debug */,
+				83BAB8B82B0DEA36006793FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83BAB8BC2B0DEACE006793FA /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83BAB8BE2B0DEAD9006793FA /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83BAB8BC2B0DEACE006793FA /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 83BAB8712B0DE7E0006793FA /* Project object */;
+}
